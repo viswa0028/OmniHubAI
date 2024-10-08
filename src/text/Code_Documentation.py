@@ -1,7 +1,7 @@
 import google.generativeai as genai
 class Gemini:
     def __init__(self):
-        genai.configure(api_key="AIzaSyAL_T-aOIbZXaBtZuheDmPJ2_MKrpeBAV0")  
+        genai.configure(api_key="<Your API key>")  
     def CodeDocumentation(self,function):
         genrative_config = {"temperature": 0.9, "top_p": 1, "top_k": 1} 
         model = genai.GenerativeModel("gemini-pro", generation_config=genrative_config)
